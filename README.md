@@ -26,3 +26,4 @@
   - git add *
   - git commit -m "mensagem"
   - git push (Enviar alterações para o repositório)
+  - git pull (Puxar / trazer alterações diretar do Github para sua maquina)
