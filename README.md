@@ -25,4 +25,4 @@
   - git status
   - git add *
   - git commit -m "mensagem"
-  - git push
+  - git push (Enviar alterações para o repositório)
