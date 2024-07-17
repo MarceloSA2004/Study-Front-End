@@ -4,47 +4,202 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Ga Maamli", sans-serif;
-    font-weight: 400;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
     font-style: normal;
+    background-color: #e4e4e4;
   }
 
 
-#header{
-    display: flex;
-    box-shadow: black 0px 0px 2px;
-    height: 50px;
-    align-items: center;
-}
-.title a{
-    text-decoration: none;
-    color: #000000;
+.container{
+    width: 100%;
+    
+    color: #fff;
 
+}
+.navbar{
+    height: 50px;
+    background-color: rgb(207, 129, 255);
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-family: .8rem;
+    position: fixed;
+    z-index: 1;
+}
+.nav ul{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+.nav ul li a{
+    text-decoration: none;
+    margin: 5px;
+    color: #fff;
+    font-size: .8rem;
 }
 .title{
     width: 30%;
-    margin-left: 20px;
 }
-.navbar ul{
+.nav{
     display: flex;
-    list-style: none;
     justify-content: end;
-    padding: 10px;
-    width: 100%;
-}
-.navbar{
     width: 70%;
 }
-.nav-link{
-    text-decoration: none;
-    margin-right: 10px;
-    color: #000000;
-    display: block;
-    transition: .5s color;
-    
+.search{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url(../img/5453471.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    padding-left: 50px;
+}
+.search-bar button {
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    width: 40px;
+    overflow: hidden;
+    height: 40px;
 
 }
-.nav-link:hover{
-    color: #48a0ff;
+.search-bar input{
+    color: black;
+    width: 80%;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+}
+.search-bar button img:active{
+    filter:sepia(1);
+}
+.search-bar{
+    display: flex;
+    margin-top: 5px;
+}
+.img-flex{
+    width: 100%;
+    height: 100%;
+    transition: .2s filter;
+}
+.vcl{
+    font-weight: 500;
+}
+.box{
+    border-left: 7px solid rgb(255, 255, 255);
+    width: 720px;
+  
+    display: block;
+    color: white;
+    padding-left: 15px;
+}
+.box h1{
+    font-size: 3rem;
+}
 
+
+
+
+#part{
+    margin-top: 5px;
+    font-size: .8rem;
+    text-align: center;
+    color: rgb(216, 216, 216);
+}
+.books-section{
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+}
+.new, .old{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    overflow: hidden;
+    padding: 0;
+    margin: 10px;
+    border-radius: 15px;
+}
+.new{
+    background-color: white;
+    max-height: 565px;
+}
+.new ul,.old ul{
+    list-style: none;
+    padding: 0px 5px 0 5px; 
+    columns: 2;
+    display: block;
+    
+}
+.new ul li a, .old ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #4d114c;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.title-old{
+    text-align: center;
+    
+}
+.title-old a{
+    text-decoration: none;
+    background-color: #4d114c;
+}
+.choice{
+    display: flex;
+    width: 100%;
+    background-color: rgb(158, 53, 148);
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+}
+.title-old a h4{
+
+    display: block;
+    padding: 5px;
+    color: white;
+
+
+}
+.kinds{
+    display: none;
+}
+@media (max-width: 800px){
+    .books-section{
+        display: block;
+    }
+    .mensagem p{
+        font-size: .7rem;
+        height: 50px;
+
+        overflow: hidden;
+    }
+    .mensagem h3{
+        font-size: 1rem;
+    }
+    .nav ul li a{
+        font-size: .9rem;
+        font-weight: 500;
+    }
+    .search{
+        padding-left: 0;
+        justify-content: center;
+    }
+    .box{
+        border: none;
+    }
+    .msg{
+    width: 95%;
+    margin: ;
+    }
+  
 }
